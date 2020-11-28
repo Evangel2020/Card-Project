@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 6rem;
+    background-color: #ecf0f3;
+    overflow: hidden;
+}
+.text {
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 1.5rem;
+    color: grey;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    grid-gap: 10px;
+    width: 100%;
+}
+.view {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+    padding: 40px 30px 10px 30px; 
+    border-radius: 25px;
+    background-color:  #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #fff;
+}
+.view input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.view > p {
+    font-size: 25px;
+}
+.view > i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.box1 input {
+    background-color: #0000ff;
+}
+.box1 >  i {
+    color: #0000ff;
+}
+.box2 input {
+    background-color: green;
+}
+.box2 > i {
+    color: green;
+}
+.box3 input {
+    background-color: orange;
+}
+.box3 > i {
+    color:  orange;
+}
+.box4 input {
+    background-color: red;
+}
+.box4 > i {
+    color: red;
+}
+/*body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    
+}
+.login-div {
+    width: 400px;
+    height: 550px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background-color:  #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #fff;
+}*/
+
+@media screen and (min-width:300px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .text {
+        font-size: 1.2rem;
+    }
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media screen and (min-width:386px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));
+        grid-gap: 2rem;
+        width: 100%;
+    }
+    .text {
+        font-size: 1.5rem;
+    }
+
+}
+@media screen and (min-width:450px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        grid-gap: 2rem;
+        width: 100%;
+    }
+    .container {
+        height: 100vh;
+    }
+
+}
+@media screen and (min-width:545px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+        grid-gap: 2rem;
+        width: 100%;
+    }
+}
+@media screen and (min-width:900px) {
+    .cards {
+        padding: 0 2rem;
+    }
+}
